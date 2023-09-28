@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: '微軟正黑體'
+        }
+
+        .container {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 0;
+        }
+
+        .white {
+            border: solid 1px rgb(106, 101, 101);
+            width: 180px;
+            height: 100px;
+            display: inline-block;
+            font-size: 12px;
+            position: relative;
+            /* background-color: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(200, 200, 200, 1) 50%, rgba(255, 255, 255, 1) 100%);
+            background-image: linear-gradient(90deg, transparent 95%, rgb(199, 194, 194) 5%);
+            background-size: 17px 15px;
+            background-repeat: repeat-x; */
+            background-image:
+                linear-gradient(90deg, transparent 95%, rgb(199, 194, 194) 5%),
+                linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(200, 200, 200, 1) 50%, rgba(255, 255, 255, 1) 100%);
+            background-size: 17px 15px, 100% 100%;
+            background-repeat: repeat-x, no-repeat;
+
+
+        }
+
+        .black {
+            border: solid 1px black;
+            background: #000;
+            width: 40px;
+            height: 100px;
+            display: inline-block;
+
+        }
+
+        .yellow {
+            border: solid 1px rgb(147, 146, 146);
+            width: 180px;
+            height: 100px;
+            position: relative;
+            display: inline-block;
+            background-image:
+                linear-gradient(90deg, transparent 95%, rgb(199, 194, 194) 5%),
+                linear-gradient(180deg, rgba(247, 245, 156, 1) 0%, rgb(185, 180, 180)50%, rgba(247, 245, 156, 1) 100%);
+            background-size: 17px 15px, 100% 100%;
+            background-repeat: repeat-x, no-repeat;
+
+        }
+
+        p {
+            color: rgb(147, 146, 146);
+            margin: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .white::before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -21.1%;
+            margin: auto;
+            content: " ";
+            display: block;
+            width: 35px;
+            height: 50px;
+            border: solid 1px rgb(202, 200, 200);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(200, 200, 200, 1) 50%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        .white::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -35%;
+            margin: auto;
+            content: " ";
+            display: block;
+            width: 30px;
+            height: 70px;
+            border: solid 1px rgb(147, 146, 146);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(200, 200, 200, 1) 50%, rgba(255, 255, 255, 1) 100%);
+            border-radius: 4px;
+        }
+
+        .yellow::before {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            margin: auto;
+            content: " ";
+            display: block;
+            width: 35px;
+            height: 50px;
+            border: solid 1px rgb(202, 200, 200);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(200, 200, 200, 1) 50%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        .yellow::after {
+            position: absolute;
+            content: " ";
+            top: 0;
+            bottom: 0;
+            left: 120%;
+            margin: auto;
+            border: solid 1px rgb(147, 146, 146);
+            width: 60px;
+            height: 0;
+        }
+
+        /* .bg {
+            background-image: linear-gradient(90deg, transparent 95%, rgb(199, 194, 194) 5%);
+            background-size: 17px 15px;
+            background-repeat: repeat-x; */
+
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="white ">
+            <p>Made in Taiwan</p>
+        </div>
+        <div class="black"></div>
+        <div class="yellow ">
+        </div>
+    </div>
+
+</body>
+
+</html>

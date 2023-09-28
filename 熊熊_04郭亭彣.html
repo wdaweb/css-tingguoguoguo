@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            position: absolute;
+            background-color: black;
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        /* 腮紅 */
+        .head::before {
+            position: absolute;
+            content: " ";
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            border-radius: 50%;
+            top: 300px;
+            left: -30px;
+            transform: translate(0, -50%);
+        }
+
+        .head::after {
+            position: absolute;
+            content: " ";
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            border-radius: 50%;
+            top: 300px;
+            right: -30px;
+            transform: translate(0, -50%);
+
+        }
+
+        /* 眼白 */
+        .eyes1 {
+            position: absolute;
+            height: 130px;
+            width: 130px;
+            background-color: #fff;
+            border-radius: 50%;
+            top: 100px;
+            left: 120px;
+        }
+
+        .eyes2 {
+            position: absolute;
+            height: 130px;
+            width: 130px;
+            background-color: #fff;
+            border-radius: 50%;
+            top: 100px;
+            right: 120px;
+        }
+
+        /* 眼球 */
+        .blackone1 {
+            position: absolute;
+            height: 90px;
+            width: 90px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .blackone2 {
+            position: absolute;
+            height: 90px;
+            width: 90px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        /* 左耳 */
+        .eyes1::before {
+            position: absolute;
+            content: " ";
+            height: 130px;
+            width: 130px;
+            top: -130px;
+            left: -50%;
+            background-color: black;
+            border-radius: 50%;
+
+        }
+
+        .eyes1::after {
+            position: absolute;
+            content: " ";
+            height: 80px;
+            width: 80px;
+            top: -110px;
+            left: -30%;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+
+        /* 右耳 */
+        .eyes2::before {
+            position: absolute;
+            content: " ";
+            height: 130px;
+            width: 130px;
+            top: -130px;
+            right: -50%;
+            background-color: black;
+            border-radius: 50%;
+
+        }
+
+        .eyes2::after {
+            position: absolute;
+            content: " ";
+            height: 80px;
+            width: 80px;
+            top: -110px;
+            right: -30%;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+
+        /* 鼻子和嘴巴 */
+        .nose {
+            position: absolute;
+            height: 170px;
+            width: 250px;
+            border-radius: 50%;
+            top: 10%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            background-color: #fff;
+
+        }
+
+        .nose::before {
+            position: absolute;
+            content: " ";
+            height: 30px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: black;
+            top: 0;
+            right: 0;
+            bottom: 70%;
+            left: 0;
+            margin: auto;
+
+
+        }
+
+        .nose::after {
+            position: absolute;
+            content: " ";
+            height: 60px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: black;
+            top: 0;
+            right: 0;
+            bottom: -20%;
+            left: 0;
+            margin: auto;
+
+
+        }
+
+        .hairy {
+            position: absolute;
+            height: 110px;
+            width: 80px;
+            top: 65%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+
+        }
+
+        .hairy::before {
+            content: " ";
+            position: absolute;
+            height: 110px;
+            width: 80px;
+            background-color: #fff;
+            left: 90%;
+            transform: skewX(-40deg);
+
+        }
+
+        .hairy::after {
+            content: " ";
+            position: absolute;
+            height: 110px;
+            width: 80px;
+            background-color: #fff;
+            right: 90%;
+            transform: skewX(40deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="eyes1">
+            <div class="blackone1"></div>
+        </div>
+        <div class="eyes2">
+            <div class="blackone2"></div>
+        </div>
+        <div class="nose"></div>
+        <div class="hairy"></div>
+
+</body>
+
+</html>
